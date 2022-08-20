@@ -118,3 +118,6 @@ fi
 
 
 motivate | cowsay
+
+
+set -o vi
