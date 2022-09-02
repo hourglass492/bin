@@ -64,7 +64,7 @@ set linebreak
 
 set noerrorbells
 
-set spell
+" set spell
 
 
 set noexpandtab
