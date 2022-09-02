@@ -3,5 +3,4 @@ vim
 git
 tree
 gdb
-motovate
 cowsay
