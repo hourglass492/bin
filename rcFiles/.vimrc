@@ -68,3 +68,7 @@ set noerrorbells
 
 
 set noexpandtab
+
+colorscheme elflord
+
+" # elflord default koehler ron

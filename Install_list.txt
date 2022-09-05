@@ -4,3 +4,6 @@ git
 tree
 gdb
 cowsay
+cowsay
+nmap
+man
