@@ -1,16 +1,16 @@
 
 for i in $(cat Install_list.txt); do
 	echo "installing $i"
-	yes | sudo apt-get install $i
+	yes | sudo apt-get install $i || true
 done
 
 
 # install motivate
-mkdir -p ~/.bin
-pushd ~/.bin
-git clone https://github.com/mubaris/motivate.git
-cd motivate/motivate
-sudo ./install.sh
+mkdir -p ~/.bin || true
+pushd ~/.bin || true
+git clone https://github.com/mubaris/motivate.git || true
+cd motivate/motivate || true
+sudo ./install.sh || true
 popd
 
 
