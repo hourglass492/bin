@@ -1,5 +1,5 @@
-yes | sudo apt update 2>&1 > ./update.log && rm ./update.log
-yes | sudo apt upgrade 2>&1 > ./upgrade.log && rm ./upgrade.log
+sudo apt update && rm ./update.log
+sudo apt upgrade && rm ./upgrade.log
 
 
 for i in $(cat Install_list.txt); do
