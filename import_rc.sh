@@ -10,6 +10,13 @@ do
 		fi
         if [ -f ~/${rc} ] ; then
                 echo "$rc already exists in the home dir"
+				read -p "Are you sure? " -n 1 -r
+				echo    # (optional) move to a new line
+				if [[ $REPLY =~ ^[Yy]$ ]]
+				then
+					rm ~/${rc}
+                	ln -s ~/bin/rcFiles/${rc} ~/${rc}
+				fi
         else
                 ln -s ~/bin/rcFiles/${rc} ~/${rc}
         fi

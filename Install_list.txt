@@ -14,3 +14,4 @@ git
 libssl-dev
 libffi-dev
 build-essential
+file
