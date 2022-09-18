@@ -1,6 +1,7 @@
 sudo apt update 
 sudo apt upgrade
 
+ssh-import-id-gh hourglass492
 
 for i in $(cat Install_list.txt); do
 	echo "installing $i"
