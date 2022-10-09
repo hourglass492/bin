@@ -124,6 +124,6 @@ set -o vi
 
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-   tmuxa
+  /usr/bin/tmux a -t $(/usr/bin/tmux ls | cut -d ":" -f 1 | sort -n | head -n 1 -) || /usr/bin/tmux 
 fi
 
